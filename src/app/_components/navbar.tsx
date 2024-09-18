@@ -5,9 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Hook to get the current route
 import navlogo from '../assets/navlogo.png';
 
-type Props = {};
-
-function Navbar({ }: Props) {
+function Navbar() {
     const pathname = usePathname(); // Get the current route
 
     const navItems = [

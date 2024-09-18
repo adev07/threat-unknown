@@ -9,11 +9,8 @@ import zommer from "../assets/svg/zommer.svg";
 import user from "../assets/svg/user.svg";
 import Image from "next/image";
 
-type Props = {};
-
-const Testimonial = ({ }: Props) => {
-    const PrevArrow = (props: any) => {
-        const { onClick } = props;
+const Testimonial = () => {
+    const PrevArrow = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivElement> }) => {
         return (
             <div
                 className="absolute top-1/2 left-0 transform -translate-y-1/2 text-[#ffff] rounded-full cursor-pointer z-10"
@@ -24,8 +21,7 @@ const Testimonial = ({ }: Props) => {
         );
     };
 
-    const NextArrow = (props: any) => {
-        const { onClick } = props;
+    const NextArrow = ({ onClick }: { onClick: React.MouseEventHandler<HTMLDivElement> }) => {
         return (
             <div
                 className="absolute top-1/2 right-0 transform -translate-y-1/2 text-[#ffff] rounded-full cursor-pointer z-10"
@@ -43,8 +39,12 @@ const Testimonial = ({ }: Props) => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow onClick={function (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void {
+            throw new Error("Function not implemented.");
+        }} />,
+        prevArrow: <PrevArrow onClick={function (event: React.MouseEvent<HTMLDivElement, MouseEvent>): void {
+            throw new Error("Function not implemented.");
+        }} />,
         responsive: [
             {
                 breakpoint: 768, // Mobile screens
@@ -94,11 +94,6 @@ const Testimonial = ({ }: Props) => {
                     <p className="text-[16px]">Role</p>
                 </div>
             </div>
-
-
-
-
-
         </Slider>
     );
 };
