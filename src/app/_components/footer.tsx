@@ -3,9 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from "../assets/navlogo.png";
 import Image from 'next/image';
 
-type Props = {}
-
-function Footer({ }: Props) {
+function Footer() {
     return (
         <footer className="bg-black text-white py-[120px] px-[64px]">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
