@@ -40,7 +40,7 @@ function Footer({ }: Props) {
                     </ul>
                 </div>
 
-                {/* Subscribe to Newsletter */}
+                {/* Subscribe to Newslette */}
                 <div className="flex flex-col items-start">
                     <h3 className="text-[24px] leading-[28px] mb-4">Subscribe to Our Newsletter</h3>
                     <div className="flex flex-col items-center space-y-2 mb-4 w-[300px]">
