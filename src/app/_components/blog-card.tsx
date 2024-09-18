@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface BlogCardProps {
@@ -12,7 +13,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ imageSrc, tags, title, description,
     return (
         <div>
             <div className="relative">
-                <img
+                <Image
                     className="object-cover w-full max-h-[252px] rounded-t-[16px]"
                     src={imageSrc}
                     alt={title}

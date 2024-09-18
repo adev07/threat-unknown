@@ -26,6 +26,7 @@ import trcuk from './assets/svg/truck.svg';
 import dollar from './assets/svg/dollar-sign.svg';
 import tag from './assets/svg/tag.svg';
 import Footer from './_components/footer';
+import Image from 'next/image';
 
 
 type Props = {}
@@ -48,19 +49,19 @@ function page({ }: Props) {
           <div className='flex items-center justify-evenly | bg-[#232323] | rounded-[10px] shadow | py-[38px]'>
             <div className='text-[32px] text-[#FFFFFF]'>Trusted by</div>
             <div className='flex items-center gap-2'>
-              <img src={shells.src} alt="" />
+              <Image src={shells} alt="" />
               <h2 className='text-[24px] text-[#FFFFFF] font-bold'>SHELLS</h2>
             </div>
             <div className='flex items-center gap-2'>
-              <img src={smarFinder.src} alt="" />
+              <Image src={smarFinder} alt="" />
               <h2 className='text-[24px] text-[#FFFFFF] font-bold'>SmartFinder</h2>
             </div>
             <div className='flex items-center gap-2'>
-              <img src={zommer.src} alt="" />
+              <Image src={zommer} alt="" />
               <h2 className='text-[24px] text-[#FFFFFF] font-bold'>Zommer</h2>
             </div>
             <div className='flex items-center gap-2'>
-              <img src={artVenue.src} alt="" />
+              <Image src={artVenue} alt="" />
               <h2 className='text-[24px] text-[#FFFFFF] font-bold'>ArtVenue</h2>
             </div>
           </div>
@@ -70,7 +71,7 @@ function page({ }: Props) {
 
       <div className='bg-[#000000] | grid grid-cols-2 items-center justify-center | px-16 py-[120px]'>
         <div className="cols-span-1">
-          <img className='object-cover | max-w-[520px] h-auto' src={intro.src} alt="" />
+          <Image className='object-cover | max-w-[520px] h-auto' src={intro} alt="" />
         </div>
         <div className="cols-span-1">
           <h1 className='heading | text-[#FFFFFF] text-[48px] font-normal leading-[58px]'>WHO WE ARE</h1>
@@ -88,22 +89,22 @@ function page({ }: Props) {
           </div>
           <div className='flex gap-8'>
             <ServicesCard
-              imageSrc={epss.src}
+              imageSrc={epss}
               title="Endpoint Security Solutions"
               description="Protect your devices and networks from malware, ransomware, and other cyber threats with our comprehensive endpoint security solutions. Safeguard sensitive data and ensure business continuity with real-time threat detection and response."
             />
             <ServicesCard
-              imageSrc={des.src}
+              imageSrc={des}
               title="Data Encryption Services"
               description="Encrypt your data and protect it from unauthorized access with our data encryption services. Secure sensitive information and comply with data protection regulations with our advanced encryption solutions."
             />
             <ServicesCard
-              imageSrc={irf.src}
+              imageSrc={irf}
               title="Incident Response Framework"
               description="Respond quickly and effectively to cyber incidents with our incident response framework. Minimize the impact of security breaches and prevent future attacks with our comprehensive incident response services."
             />
             <ServicesCard
-              imageSrc={nss.src}
+              imageSrc={nss}
               title="Network Security Services"
               description="Secure your network infrastructure and protect your business from cyber threats with our network security services. Monitor network traffic, detect vulnerabilities, and respond to security incidents with our advanced network security solutions."
             />
@@ -135,7 +136,7 @@ function page({ }: Props) {
           </div>
         </div>
         <div className="cols-span-1 flex justify-center">
-          <img className='object-cover | max-w-[490px] h-auto' src={wcu.src} alt="" />
+          <Image className='object-cover | max-w-[490px] h-auto' src={wcu} alt="" />
         </div>
       </div>
       {/* why Choose us ends here */}
@@ -153,7 +154,7 @@ function page({ }: Props) {
         <h2 className='heading | text-[48px] text-[#FFFFFF] leading-[58px]'>Latest Blog Post</h2>
         <div className='flex gap-8 mt-8'>
           <BlogCard
-            imageSrc={blog1.src}
+            imageSrc={blog1}
             tags={['Tag Name', 'Tag Name']}
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet, coctetur adipiscing fermentum amet, phasellus
@@ -162,7 +163,7 @@ function page({ }: Props) {
             date="Sep 01, 2024"
           />
           <BlogCard
-            imageSrc={blog2.src}
+            imageSrc={blog2}
             tags={['Tag Name', 'Tag Name']}
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet, coctetur adipiscing fermentum amet, phasellus
@@ -171,7 +172,7 @@ function page({ }: Props) {
             date="Sep 01, 2024"
           />
           <BlogCard
-            imageSrc={blog3.src}
+            imageSrc={blog3}
             tags={['Tag Name', 'Tag Name']}
             title="Lorem ipsum dolor sit amet"
             description="Lorem ipsum dolor sit amet, coctetur adipiscing fermentum amet, phasellus
@@ -186,7 +187,7 @@ function page({ }: Props) {
       {/* faq starts here */}
       <div>
         <div className="relative">
-          <img className="object-cover w-full" src={FAQ.src} alt="" />
+          <Image className="object-cover w-full" src={FAQ} alt="" />
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10">
             <h2 className="heading text-[48px] text-[#ffff] leading-[58px]">Ask us anything</h2>
@@ -205,7 +206,7 @@ function page({ }: Props) {
           <div className='grid grid-cols-3 items-start gap-6'>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={mail.src} alt="" />
+                <Image className='object-cover' src={mail} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>How do I change my account email?</h3>
@@ -214,7 +215,7 @@ function page({ }: Props) {
             </div>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={card.src} alt="" />
+                <Image className='object-cover' src={card} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>What should I do if my payment fails?</h3>
@@ -223,7 +224,7 @@ function page({ }: Props) {
             </div>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={notallowed.src} alt="" />
+                <Image className='object-cover' src={notallowed} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>What is your cancellation policy?</h3>
@@ -234,7 +235,7 @@ function page({ }: Props) {
           <div className='grid grid-cols-3 items-start gap-6 mt-[52px]'>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={trcuk.src} alt="" />
+                <Image className='object-cover' src={trcuk} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>How do I check order delivery status?</h3>
@@ -243,7 +244,7 @@ function page({ }: Props) {
             </div>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={dollar.src} alt="" />
+                <Image className='object-cover' src={dollar} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>What is Instant Refunds?</h3>
@@ -252,7 +253,7 @@ function page({ }: Props) {
             </div>
             <div className='col-span-1'>
               <div className='bg-[#232323] w-[50px] h-[50px] flex items-center justify-center p-3 rounded-full'>
-                <img className='object-cover' src={tag.src} alt="" />
+                <Image className='object-cover' src={tag} alt="" />
               </div>
               <div className='mt-[14px]'>
                 <h3 className='text-[#ffff] text-[16px]'>How do I apply a coupon on my order?</h3>

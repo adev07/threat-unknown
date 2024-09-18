@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface ServicesCardProps {
@@ -16,7 +17,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ imageSrc, title, descriptio
             }}
         >
             <div>
-                <img src={imageSrc} alt={title} />
+                <Image src={imageSrc} alt={title} />
             </div>
             <h2 className='text-[#FFFFFF] text-[24px] mt-2'>{title}</h2>
             <p className='mt-4 text-[18px] text-[#FFFFFF]'>

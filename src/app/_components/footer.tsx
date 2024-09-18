@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from "../assets/navlogo.png";
+import Image from 'next/image';
 
 type Props = {}
 
@@ -10,7 +11,7 @@ function Footer({ }: Props) {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Logo and Description */}
                 <div className="flex flex-col items-start">
-                    <img className='object-cover w-[120px] h-auto' src={logo.src} alt="" />
+                    <Image className='object-cover w-[120px] h-auto' src={logo} alt="" />
                     <p className="my-4 text-[16px] leading-[28px]">
                         Lorem ipsum dolor sit amet, consectetur theithis adipiscing elit. Quis facilisis quam semper urna rutrum egestas ante.
                     </p>
