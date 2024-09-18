@@ -2,7 +2,7 @@ import React from 'react'
 import shells from '../app/assets/svg/logo2.svg';
 import smarFinder from '../app/assets/svg/smarfinder.svg';
 import zommer from '../app/assets/svg/zommer.svg';
-import artVenue from '../app/assets/svg/artvenue.svg';
+import artVenue from '../app/assets/svg/artVenue.svg';
 import intro from '../app/assets/hero2.webp';
 import Button from './_components/button';
 import epss from '../app/assets/svg/Sercices1.svg'
