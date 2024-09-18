@@ -29,9 +29,8 @@ import Footer from './_components/footer';
 import Image from 'next/image';
 
 
-type Props = {}
 
-function page({ }: Props) {
+function page() {
   return (
     <div>
       <div className="hero min-h-[910px] | flex flex-col items-center justify-center text-center">
