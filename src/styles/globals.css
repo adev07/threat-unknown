@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: brolink;
+    src: url(./fonts/brolink//Brolink\ DEMO.otf);
+}
+
+.heading {
+    font-family: brolink;
+}
+
+.hero {
+    background-image: url(../app/assets/hero.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.services {
+    background-image: url(../app//assets/svg/Services.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.glassmorphic-pill {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
