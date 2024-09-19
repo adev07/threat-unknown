@@ -43,13 +43,13 @@ function page() {
                     <p className='text-[#ffff] text-[24px] font-normal'>We are providing cybersecurity services to some of the World’s leading companies</p>
                 </div>
                 <div className='flex items-center justify-center gap-[85px] mt-4'>
-                    <Image src={youtube} alt="" />
-                    <Image src={Nike.src} alt="" />
-                    <Image src={apple.src} alt="" />
-                    <Image src={bbc.src} alt="" />
-                    <Image src={slack.src} alt="" />
-                    <Image src={zoom.src} alt="" />
-                    <Image src={cloud.src} alt="" />
+                    <Image width={60} src={youtube} alt="" />
+                    <Image width={60} src={Nike} alt="" />
+                    <Image width={60} src={apple} alt="" />
+                    <Image width={60} src={bbc} alt="" />
+                    <Image width={60} src={slack} alt="" />
+                    <Image width={60} src={zoom} alt="" />
+                    <Image width={60} src={cloud} alt="" />
                 </div>
 
                 <div className='mt-[60px]'>
