@@ -65,7 +65,7 @@ function page() {
                                 background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
                             }}
                         >
-                            <Image width={45} height={45} src={epss.src} alt="" />
+                            <Image width={45} height={45} src={epss} alt="" />
                             <h2 className='text-[24px] font-[600] leading-[33px] mt-4'>Endpoint Security Solutions</h2>
                             <p className='text-[16px] text-[#ffff]/50 font-thin mt-6'>Protect your devices and networks from malware, ransomware, and other cyber threats with our comprehensive endpoint security solutions. Safeguard sensitive data and ensure business continuity with real-time threat detection and response.</p>
                         </div>
@@ -75,7 +75,7 @@ function page() {
                                 background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
                             }}
                         >
-                            <Image width={45} height={45} src={nss.src} alt="" />
+                            <Image width={45} height={45} src={nss} alt="" />
                             <h2 className='text-[24px] font-[600] leading-[33px] mt-4'>Network Security Solutions</h2>
                             <p className='text-[16px] text-[#ffff]/50 font-thin mt-6'>Secure your network infrastructure from unauthorized access and data breaches with our advanced network security solutions. Defend against evolving cyber threats and maintain network integrity with robust firewalls.</p>
                         </div>
@@ -87,7 +87,7 @@ function page() {
                                 background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
                             }}
                         >
-                            <Image width={45} height={45} src={des.src} alt="" />
+                            <Image width={45} height={45} src={des} alt="" />
                             <h2 className='text-[24px] font-[600] leading-[33px] mt-4'>Data Encryption Services</h2>
                             <p className='text-[16px] text-[#ffff]/50 font-thin mt-6'>Encrypt sensitive data at rest and in transit to protect confidentiality and integrity. Our data encryption services provide end-to-end encryption solutions to safeguard your most valuable assets from unauthorized access and cyber attacks.</p>
                         </div>
@@ -97,7 +97,7 @@ function page() {
                                 background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
                             }}
                         >
-                            <Image width={45} height={45} src={irf.src} alt="" />
+                            <Image width={45} height={45} src={irf} alt="" />
                             <h2 className='text-[24px] font-[600] leading-[33px] mt-4'>Incident Response and Forensics</h2>
                             <p className='text-[16px] text-[#ffff]/50 font-thin mt-6'>Rapidly detect, respond to, and recover from security incidents with our incident response and forensic services. Minimize the impact of breaches and maintain business continuity with our expert team of cybersecurity professionals.</p>
                         </div>
