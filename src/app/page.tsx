@@ -11,7 +11,6 @@ import irf from '../app/assets/svg/services4.svg'
 import nss from '../app/assets/svg/services2.svg'
 import { IoIosArrowForward } from 'react-icons/io';
 import wcu from '../app/assets/svg/wcu.svg';
-import Testimonial from './_components/testimonial';
 import blog1 from '../app/assets/blog1.png';
 import blog2 from '../app/assets/svg/blog2.svg';
 import blog3 from '../app/assets/svg/blog3.svg';
@@ -25,8 +24,8 @@ import notallowed from './assets/svg/Icon.svg';
 import trcuk from './assets/svg/truck.svg';
 import dollar from './assets/svg/dollar-sign.svg';
 import tag from './assets/svg/tag.svg';
-import Footer from './_components/footer';
 import Image from 'next/image';
+import TestimonialsCarousel from './_components/testimonial';
 
 
 
@@ -143,7 +142,7 @@ function page() {
       <div className='bg-[#1C1C1C] text-center min-h-[700px] px-16 py-[120px]'>
         <h2 className='heading | text-[48px] text-[#FFFFFF] leading-[58px]'>Customers Trust Us</h2>
         <div className='mt-8'>
-          <Testimonial />
+          <TestimonialsCarousel />
         </div>
       </div>
 
@@ -280,10 +279,6 @@ function page() {
 
       </div>
       {/* faq ends here */}
-
-      <div>
-        <Footer />
-      </div>
 
 
 

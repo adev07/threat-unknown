@@ -12,6 +12,15 @@
     font-family: brolink;
 }
 
+.heading-secondary {
+    font-family: brolink;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+
 .hero {
     background-image: url(../app/assets/hero.webp);
     background-size: cover;
