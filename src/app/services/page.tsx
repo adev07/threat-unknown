@@ -10,6 +10,7 @@ import epss from '../assets/svg/Sercices1.svg';
 import nss from '../assets/svg/services2.svg';
 import des from '../assets/svg/services3.svg';
 import irf from '../assets/svg/services4.svg';
+import Image from 'next/image';
 
 function page() {
     return (
@@ -42,13 +43,13 @@ function page() {
                     <p className='text-[#ffff] text-[24px] font-normal'>We are providing cybersecurity services to some of the World’s leading companies</p>
                 </div>
                 <div className='flex items-center justify-center gap-[85px] mt-4'>
-                    <img src={youtube.src} alt="" />
-                    <img src={Nike.src} alt="" />
-                    <img src={apple.src} alt="" />
-                    <img src={bbc.src} alt="" />
-                    <img src={slack.src} alt="" />
-                    <img src={zoom.src} alt="" />
-                    <img src={cloud.src} alt="" />
+                    <Image src={youtube} alt="" />
+                    <Image src={Nike.src} alt="" />
+                    <Image src={apple.src} alt="" />
+                    <Image src={bbc.src} alt="" />
+                    <Image src={slack.src} alt="" />
+                    <Image src={zoom.src} alt="" />
+                    <Image src={cloud.src} alt="" />
                 </div>
 
                 <div className='mt-[60px]'>
