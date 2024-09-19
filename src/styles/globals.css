@@ -33,6 +33,12 @@
     background-position: center;
 }
 
+.testimonials {
+    background-image: url(../app/assets/svg/testimonials.svg);
+    background-size: cover;
+    background-position: center;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }

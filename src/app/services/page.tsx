@@ -11,6 +11,7 @@ import nss from '../assets/svg/services2.svg';
 import des from '../assets/svg/services3.svg';
 import irf from '../assets/svg/services4.svg';
 import Image from 'next/image';
+import testimonial from '../assets/svg/testimonials.svg';
 
 function page() {
     return (
@@ -100,6 +101,53 @@ function page() {
                             <Image width={45} height={45} src={irf} alt="" />
                             <h2 className='text-[24px] font-[600] leading-[33px] mt-4'>Incident Response and Forensics</h2>
                             <p className='text-[16px] text-[#ffff]/50 font-thin mt-6'>Rapidly detect, respond to, and recover from security incidents with our incident response and forensic services. Minimize the impact of breaches and maintain business continuity with our expert team of cybersecurity professionals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='testimonials min-h-[638px]'>
+                    <h1 className='heading-secondary text-center pt-[120px]'>
+                        Why to choose us?
+                    </h1>
+                    <div className='flex items-center justify-center gap-6 px-[120px] mt-8'>
+                        <div
+                            className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
+                            style={{
+                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                backdropFilter: 'blur(10px)',
+                            }}
+                        >
+                            <img src={epss.src} alt="" />
+                            <h2 className='text-[24px] my-[28px]'>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, ispum
+                                ut consectetur acursus voult
+                            </p>
+                        </div>
+                        <div
+                            className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
+                            style={{
+                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                backdropFilter: 'blur(10px)',
+                            }}
+                        >
+                            <img src={epss.src} alt="" />
+                            <h2 className='text-[24px] my-[28px]'>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, ispum
+                                ut consectetur acursus voult
+                            </p>
+                        </div>
+                        <div
+                            className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
+                            style={{
+                                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                backdropFilter: 'blur(10px)',
+                            }}
+                        >
+                            <img src={epss.src} alt="" />
+                            <h2 className='text-[24px] my-[28px]'>Lorem</h2>
+                            <p>Lorem ipsum dolor sit amet, ispum
+                                ut consectetur acursus voult
+                            </p>
                         </div>
                     </div>
                 </div>
