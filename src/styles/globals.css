@@ -39,6 +39,13 @@
     background-position: center;
 }
 
+.faqs {
+    background-image: url(../app/assets/svg/FAQ2.svg);
+    background-size: cover;
+    background-position: center;
+
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
