@@ -261,7 +261,7 @@ function page() {
             </div>
           </div>
           <div
-            className="w-full h-full mt-[70px] rounded-[12px] p-6 text-[#ffff]"
+            className="w-full h-full mt-[70px] rounded-[12px] p-6 text-[#ffff] shadow"
             style={{
               background: 'linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%)',
             }}
@@ -269,7 +269,7 @@ function page() {
             <div className='flex items-center justify-between'>
               <div>
                 <h3 className='text-[24px]'>Still have questions?</h3>
-                <p className='text-[16px]'>Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+                <p className='text-[16px]'>Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.</p>
               </div>
               <div>
                 <Button text='Get in touch' />
