@@ -32,12 +32,29 @@ function page() {
     return (
         <div>
             <div className="hero min-h-[660px] relative | flex flex-col items-center justify-center text-center">
-                <h1 className="heading-secondary">Insights & Updates</h1>
+                <h1 className="heading-secondary">Our Projects</h1>
                 <p className='text-[#FFFFFF] text-[32px] leading-[42px] font-thin | mt-4'>
-                    Stay informed with the latest cybersecurity news, tips, and <br />strategies to keep your business secure.
+                    Real Solutions for Real Cybersecurity Challenges
                 </p>
+                <div className='px-[64px] | min-w-[930px] absolute bottom-0 mb-[-60px]'>
+                    <div className='flex items-center justify-center | bg-[#232323] | rounded-[10px] shadow | py-[38px]'>
+                        <div className='border-r pr-[50px]'>
+                            <h2 className='text-[24px] text-[#FFFFFF]'>5Y</h2>
+                            <h3 className='text-[16px] text-[#FFFFFF]'>Experience</h3>
+                        </div>
+                        <div className='px-[50px]'>
+                            <h2 className='text-[24px] text-[#FFFFFF]'>100+</h2>
+                            <h3 className='text-[16px] text-[#FFFFFF]'>Projects</h3>
+                        </div>
+                        <div className='border-l pl-[50px]'>
+                            <h2 className='text-[24px] text-[#FFFFFF]'>50K</h2>
+                            <h3 className='text-[16px] text-[#FFFFFF]'>Happy customerse</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="bg-black py-[120px] px-[64px]">
+            <div className="bg-black py-[140px] px-[64px]">
+                <p className='text-[#fff]/50 text-center'>Explore some of our successful projects where we’ve helped organizations secure their digital environments, protect sensitive data, and enhance their cybersecurity posture. Each project is a testament to our commitment to delivering robust, tailored solutions that address unique challenges.</p>
                 {Array.from({ length: 3 }, (_, index) => (
                     <div key={index} className="flex items-center justify-center gap-8 mt-16">
                         {blogData.map((blog, idx) => (
@@ -57,14 +74,14 @@ function page() {
                 </div>
             </div>
             <div className="faqs min-h-[464px] relative before:absolute before:inset-0 before:bg-black/60 before:z-0">
-                <div className='relative z-10 flex flex-col items-center justify-center pt-[120px]'>
+                <div className='relative z-10 flex flex-col items-center justify-center pt-[120px] mx-[210px]'>
                     <h1 className="heading-secondary text-center">
-                        How to choose <br /> cybersecurity solution
+                        Have any project for us?
                     </h1>
-                    <p className='text-white text-[18px] leading-[28px] font-thin | mt-3'>
-                        Having difficulties choosing the right solution for your business?
+                    <p className='text-white text-[18px] leading-[28px] font-thin | mt-3 text-center'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor id aliquam dignissim risus diam dictum. A lectus in ridiculus viverra id ut dui volutpat volutpat. Vulputate sed imperdiet magna ac nunc faucibus. Enim eget egestas ipsum
                     </p>
-                    <Button className='mt-8' text='Talk with us' />
+                    <Button className='mt-8' text='Lets Discuss' />
                 </div>
             </div>
         </div>

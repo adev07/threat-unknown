@@ -43,7 +43,12 @@
     background-image: url(../app/assets/svg/FAQ2.svg);
     background-size: cover;
     background-position: center;
+}
 
+.clients {
+    background-image: url(../app/assets/svg/client.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 body {
