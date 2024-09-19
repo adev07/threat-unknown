@@ -39,10 +39,10 @@ function page() {
             </div>
 
             <div className='bg-[#000000] min-h-screen'>
-                <div className='pt-[120px] px-[64px] text-center'>
+                <div className='pt-[160px] px-[64px] text-center'>
                     <p className='text-[#ffff] text-[24px] font-normal'>We are providing cybersecurity services to some of the World’s leading companies</p>
                 </div>
-                <div className='flex items-center justify-center gap-[85px] mt-4'>
+                <div className='flex items-center justify-center gap-[85px] mt-4 py-6'>
                     <Image width={60} src={youtube} alt="" />
                     <Image width={60} src={Nike} alt="" />
                     <Image width={60} src={apple} alt="" />
@@ -52,7 +52,7 @@ function page() {
                     <Image width={60} src={cloud} alt="" />
                 </div>
 
-                <div className='mt-[60px]'>
+                <div className='mt-[70px]'>
                     <h3 className='text-[#fff] text-center text-[24px] leading-[34px] font-thin'>At <span className='text-[#FF0000]'>Treat Unknown</span>, we're dedicated to protecting businesses and individuals from the ever-evolving threats in the <br />digital landscape. With [X years/months] of experience in the cybersecurity industry, we have honed our expertise <br /> to deliver innovative solutions that safeguard your digital assets and maintain your peace of mind.</h3>
                 </div>
 
