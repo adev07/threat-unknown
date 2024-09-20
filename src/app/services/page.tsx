@@ -105,11 +105,12 @@ function page() {
                     </div>
                 </div>
 
-                <div className='testimonials min-h-[638px]'>
-                    <h1 className='heading-secondary text-center pt-[120px]'>
+                <div className='testimonials relative min-h-[638px]'>
+                    <div className="absolute inset-0 bg-black opacity-70 z-0"></div> {/* Overlay */}
+                    <h1 className='heading-secondary text-center pt-[120px] z-10 relative'>
                         Why to choose us?
                     </h1>
-                    <div className='flex items-center justify-center gap-6 px-[120px] mt-8'>
+                    <div className='flex items-center justify-center gap-6 px-[120px] mt-8 z-10 relative'>
                         <div
                             className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
                             style={{
@@ -119,9 +120,7 @@ function page() {
                         >
                             <img src={epss.src} alt="" />
                             <h2 className='text-[24px] my-[28px]'>Lorem</h2>
-                            <p>Lorem ipsum dolor sit amet, ispum
-                                ut consectetur acursus voult
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, ispum ut consectetur acursus voult</p>
                         </div>
                         <div
                             className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
@@ -132,9 +131,7 @@ function page() {
                         >
                             <img src={epss.src} alt="" />
                             <h2 className='text-[24px] my-[28px]'>Lorem</h2>
-                            <p>Lorem ipsum dolor sit amet, ispum
-                                ut consectetur acursus voult
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, ispum ut consectetur acursus voult</p>
                         </div>
                         <div
                             className='py-[30px] pr-[90px] pl-[22px] rounded-[16px] shadow-lg text-[#ffff]'
@@ -145,12 +142,11 @@ function page() {
                         >
                             <img src={epss.src} alt="" />
                             <h2 className='text-[24px] my-[28px]'>Lorem</h2>
-                            <p>Lorem ipsum dolor sit amet, ispum
-                                ut consectetur acursus voult
-                            </p>
+                            <p>Lorem ipsum dolor sit amet, ispum ut consectetur acursus voult</p>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
