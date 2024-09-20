@@ -31,8 +31,8 @@ function page() {
                     <h2 className='heading text-[38px] text-[#ffff]'>Contact us</h2>
                     <div className='mt-[42px]'>
                         <div className='flex gap-8 items-center justify-start'>
-                            <input className='py-[20px] px-[15px] text-[#ffff] bg-[#393939] rounded-[12px] placeholder:text-[#A6A6A6] focus:outline-none' placeholder='Name' type="text" />
-                            <input className='py-[20px] px-[15px] text-[#ffff] bg-[#393939] rounded-[12px] placeholder:text-[#A6A6A6] focus:outline-none' placeholder='email' type="text" />
+                            <input className='py-[20px] px-[15px] w-full text-[#ffff] bg-[#393939] rounded-[12px] placeholder:text-[#A6A6A6] focus:outline-none' placeholder='Name' type="text" />
+                            <input className='py-[20px] px-[15px] w-full text-[#ffff] bg-[#393939] rounded-[12px] placeholder:text-[#A6A6A6] focus:outline-none' placeholder='email' type="text" />
                         </div>
                         <div>
                             <textarea placeholder='Your Message Here' className='py-[20px] px-[15px] text-[#ffff] bg-[#393939] rounded-[12px] placeholder:text-[#A6A6A6] focus:outline-none w-full h-[200px] mt-[24px]' />
