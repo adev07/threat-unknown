@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import logo from "../assets/navlogo.png";
 import Image from 'next/image';
 
 function Footer() {
     return (
-        <footer className="bg-black text-white py-[120px] px-[64px]">
+        <footer className="bg-black text-white py-[60px] md:py-[90px] lg:py-[120px] px-6 md:px-8 lg:px-[64px]">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Logo and Description */}
                 <div className="flex flex-col items-start">
-                    <Image className='object-cover w-[120px] h-auto' src={logo} alt="" />
-                    <p className="my-4 text-[16px] leading-[28px]">
-                        Lorem ipsum dolor sit amet, consectetur theithis adipiscing elit. Quis facilisis quam semper urna rutrum egestas ante.
+                    <Image className='object-cover w-[100px] md:w-[120px] h-auto' src={logo} alt="" />
+                    <p className="my-4 text-[14px] md:text-[16px] leading-[24px] md:leading-[28px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis facilisis quam semper urna rutrum egestas ante.
                     </p>
                     {/* Social Media Icons */}
                     <div className="flex space-x-4">
@@ -28,8 +28,8 @@ function Footer() {
                 </div>
 
                 {/* Quick Links */}
-                <div className="flex flex-col items-center">
-                    <h3 className="text-[24px] leading-[28px] mb-4 ml-[45px]">Quick Links</h3>
+                <div className="flex flex-col items-start">
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] mb-4">Quick Links</h3>
                     <ul className="space-y-2">
                         <li><a href="#" className="hover:text-gray-400">Home</a></li>
                         <li><a href="#" className="hover:text-gray-400">Services</a></li>
@@ -39,10 +39,10 @@ function Footer() {
                     </ul>
                 </div>
 
-                {/* Subscribe to Newslette */}
-                <div className="flex flex-col items-start">
-                    <h3 className="text-[24px] leading-[28px] mb-4">Subscribe to Our Newsletter</h3>
-                    <div className="flex flex-col items-center space-y-2 mb-4 w-[300px]">
+                {/* Subscribe to Newsletter */}
+                <div className="flex flex-col items-start md:items-center lg:items-start">
+                    <h3 className="text-[20px] md:text-[24px] leading-[28px] mb-4">Subscribe to Our Newsletter</h3>
+                    <div className="flex flex-col items-center space-y-2 mb-4 w-full max-w-[300px]">
                         <input
                             type="email"
                             placeholder="Email Address"
@@ -60,7 +60,7 @@ function Footer() {
                 <p>Copyrights © 2024 Threat Unknown, All Right Reserved</p>
             </div>
         </footer>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

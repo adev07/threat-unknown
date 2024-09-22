@@ -10,7 +10,7 @@ interface ServicesCardProps {
 const ServicesCard: React.FC<ServicesCardProps> = ({ imageSrc, title, description }) => {
     return (
         <div
-            className='mt-16 p-8 rounded-[16px] shadow-lg'
+            className='sm:mt-16 p-8 rounded-[16px] shadow-lg'
             style={{
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(10px)',

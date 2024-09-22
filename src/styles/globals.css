@@ -13,11 +13,29 @@
 }
 
 .heading-secondary {
-    font-family: brolink;
+    font-family: 'brolink', sans-serif;
     color: #FFFFFF;
-    font-size: 48px;
     font-weight: 400;
-    line-height: 58px;
+    font-size: 30px;
+    /* Base font-size for mobile screens */
+    line-height: 38px;
+    /* Base line-height for mobile screens */
+}
+
+@media (min-width: 640px) {
+    .heading-secondary {
+        font-size: 36px;
+        /* Slightly larger for small screens (tablets) */
+        line-height: 44px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading-secondary {
+        font-size: 48px;
+        /* Default size for larger screens (desktops) */
+        line-height: 58px;
+    }
 }
 
 
