@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Hook to get the current route
 import navlogo from '../assets/navlogo.png';
 import { FiMenu, FiX } from 'react-icons/fi'; // Import menu and close icons
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to manage drawer visibility
@@ -23,11 +24,21 @@ function Navbar() {
         setIsDrawerOpen(!isDrawerOpen);
     };
 
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/contact');
+    };
+
+    const handleClickLogo = () => {
+        router.push('/');
+    }
+
+
     return (
         <div className="z-[100] absolute w-full">
             <div className="flex justify-between items-center px-[30px] lg:px-[60px] py-[20px] lg:py-[28px]">
-                <div>
-                    {/* Logo */}
+                <div onClick={handleClickLogo} className='cursor-pointer'>
                     <Image src={navlogo} className="object-cover w-[100px] h-auto lg:w-[120px]" alt="Logo" />
                 </div>
 
@@ -45,7 +56,10 @@ function Navbar() {
                         ))}
                     </ul>
                     <div className="mx-8 text-[28px] text-[#ffff] font-thin">|</div>
-                    <button className="text-[16px] text-[#232323] bg-[#FFFFFF] rounded-[4px] py-2 px-4">
+                    <button
+                        className="text-[16px] text-[#232323] bg-[#FFFFFF] rounded-[4px] py-2 px-4"
+                        onClick={handleClick}
+                    >
                         Get in touch
                     </button>
                 </div>
