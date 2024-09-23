@@ -14,8 +14,8 @@ function page() {
                         We're Here to Help Secure Your Business
                     </p>
                 </div>
-                <div className='bg-black sm:py-[140px] py-[60px] px-6 sm:px-[64px] flex flex-col md:flex-row relative items-center'>
-                    <div className="w-full md:w-[617px] h-[400px] md:h-[660px] mb-8 md:mb-0">
+                <div className='bg-black sm:py-[140px] py-[60px] px-6 sm:px-[64px] flex flex-col md:flex-row items-center sm:min-h-screen'>
+                    {/* <div className="w-full md:w-[617px] h-[400px] md:h-[660px] mb-8 md:mb-0">
                         <iframe
                             title="Google Map"
                             width="100%"
@@ -26,8 +26,8 @@ function page() {
                             allowFullScreen
                             aria-hidden="false"
                         ></iframe>
-                    </div>
-                    <div className='w-full md:w-[784px] md:absolute h-[580px] rounded-[32px] shadow bg-[#232323] p-[24px] md:ml-[520px] md:p-[48px]'>
+                    </div> */}
+                    <div className='w-full sm:h-[580px] rounded-[32px] shadow bg-[#232323] p-[24px] md:p-[48px]'>
                         <h2 className='heading text-[24px] md:text-[38px] text-[#ffff]'>Contact us</h2>
                         <div className='mt-[20px] md:mt-[42px]'>
                             <div className='flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-start'>
