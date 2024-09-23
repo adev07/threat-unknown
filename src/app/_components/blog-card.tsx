@@ -11,7 +11,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ imageSrc, tags, title, description, date }) => {
     return (
-        <div>
+        <div className='cursor-pointer'>
             <div className="relative">
                 <Image
                     className="object-cover w-full max-h-[252px] rounded-t-[16px]"

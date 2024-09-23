@@ -1,11 +1,15 @@
+"use client";
 import React from 'react'
 import BlogCard from '../_components/blog-card'
 import blog1 from '../assets/blog1.png';
 import blog2 from '../assets/svg/blog2.svg';
 import blog3 from '../assets/svg/blog3.svg';
 import Button from '../_components/button';
+import { useRouter } from 'next/navigation';
 
 function page() {
+    const router = useRouter();
+
     const blogData = [
         {
             imageSrc: blog1,
@@ -29,6 +33,11 @@ function page() {
             date: 'Sep 01, 2024',
         },
     ];
+
+    const handleCardClick = () => {
+        router.push('/project-details');
+    };
+
     return (
         <div>
             <div className="hero sm:min-h-[660px] min-h-[620px] relative flex flex-col items-center justify-center text-center">
@@ -59,7 +68,7 @@ function page() {
                     Explore some of our successful projects where we’ve helped organizations secure their digital environments, protect sensitive data, and enhance their cybersecurity posture. Each project is a testament to our commitment to delivering robust, tailored solutions that address unique challenges.
                 </p>
                 {Array.from({ length: 3 }, (_, index) => (
-                    <div key={index} className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-10 sm:mt-16">
+                    <div key={index} onClick={handleCardClick} className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-10 sm:mt-16">
                         {blogData.map((blog, idx) => (
                             <BlogCard
                                 key={idx}

@@ -1,11 +1,16 @@
+"use client";
 import React from 'react'
 import BlogCard from '../_components/blog-card'
 import blog1 from '../assets/blog1.png';
 import blog2 from '../assets/svg/blog2.svg';
 import blog3 from '../assets/svg/blog3.svg';
 import Button from '../_components/button';
+import { useRouter } from 'next/navigation';
 
 function page() {
+
+    const router = useRouter();
+
     const blogData = [
         {
             imageSrc: blog1,
@@ -29,6 +34,9 @@ function page() {
             date: 'Sep 01, 2024',
         },
     ];
+    const handleCardClick = () => {
+        router.push('/blog-details');
+    };
     return (
         <div>
             <div className="hero sm:min-h-[660px] min-h-[620px] relative flex flex-col items-center justify-center text-center px-6 sm:px-8 lg:px-16">
@@ -41,7 +49,7 @@ function page() {
             </div>
             <div className="bg-black sm:py-[120px] py-[40px] sm:px-[64px] px-6">
                 {Array.from({ length: 3 }, (_, index) => (
-                    <div key={index} className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-10 sm:mt-16">
+                    <div key={index} onClick={handleCardClick} className="flex flex-col sm:flex-row items-center justify-center gap-8 mt-10 sm:mt-16">
                         {blogData.map((blog, idx) => (
                             <BlogCard
                                 key={idx}
